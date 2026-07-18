@@ -1,7 +1,7 @@
 // Production Minvoice deployment on Cloudflare Workers.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "invoicing-platform",
+  "name": "mds-invoicing-platform",
   "main": "src/index.tsx",
   "compatibility_date": "2026-06-01",
   "compatibility_flags": ["nodejs_compat"],
@@ -18,7 +18,7 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "invoicing-platform",
+      "database_name": "mds-invoicing-platform",
       "database_id": "ea28aa2a-ebff-4f66-8da5-0faf76e48b43"
     }
   ],
