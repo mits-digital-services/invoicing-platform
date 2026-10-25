@@ -2,7 +2,7 @@
   "name": "invoicing-platform",
   "version": "0.1.0",
   "private": true,
-  "description": "Minimal single-business invoicing on Cloudflare Workers — Stripe & PayPal, PDF invoices, payment reminders. One-click deploy, no monthly fees.",
+  "description": "Minimal single-business invoicing on Cloudflare Workers \u2014 Stripe & PayPal, PDF invoices, payment reminders. One-click deploy, no monthly fees.",
   "license": "MIT",
   "homepage": "https://minvoice.dev",
   "repository": {
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.18.5",
     "typescript": "^5.6.0",
-    "vitest": "^4.1.9",
+    "vitest": "4.1.12",
     "wrangler": "^4.0.0"
   },
   "cloudflare": {
@@ -57,5 +57,10 @@
         "description": "Password for /admin until you configure Cloudflare Access (which disables it automatically). Pick something long."
       }
     }
+  },
+  "overrides": {
+    "@vitest/mocker": "4.1.12",
+    "sharp": "0.35.5",
+    "undici": "7.30.1"
   }
 }
